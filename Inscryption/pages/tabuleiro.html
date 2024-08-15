@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <link rel="stylesheet" href="../static/css/template.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscryption</title>
+</head>
+<body>
+
+    <header> 
+      <div class="logo"><img  style="width: 55px; height: 55px; cursor: pointer;" src="../media/logo.png" onclick="window.location.href='../index.html'">
+        <a>Inscryption</a></div>
+
+      <h1></h1>
+      <button onclick="window.location.href='../pages/cartas.html'">Cartas</button>
+      <button onclick="window.location.href='../pages/itens.html'">Itens</button>
+      <button class="clicked">Tabuleiro</button>
+      <button onclick="window.location.href='../pages/chefes.html'">Chefes</button>
+    </header>
+
+    <table class="tabuleiro" border="10px">
+      <tr>
+        <th style="width: 100px; background-color: rgba(89, 25, 55, 0.9);">Casa</th>
+        <th style="width: 300px; background-color: rgba(89, 25, 55, 0.9);">Nome</th>
+        <th style="width: 700px; background-color: rgba(89, 25, 55, 0.9);">Descrição</th>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/cartarandom.jpg"></td>
+        <td>Carta aleatória</td>
+        <td>São oferecidas 3 <a style="color: white;" href="../pages/cards/comum.html">cartas comuns</a>, você pode escolher apenas uma delas. A mesma ficará permanentemente no seu inventário</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/familyrandom.jpg"></td>
+        <td>Carta por tribo</td>
+        <td>São oferecidas cartas de 3 tribos aleatórias, selecionando uma, aparecem 3 cartas desse tipo. Você pode escolher apenas uma delas, a mesma ficará permanentemente no seu inventário</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/bloodrandom.jpg"></td>
+        <td>Carta por custo</td>
+        <td>São oferecidas 3 dos 4 tipos possíveis de custo: 1 sangue, 2 ou 3, e osso x". Escolhendo um deles, 3 cartas desse tipo ficam à escolha, apenas uma fica no seu inventário</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/bag.jpg"></td>
+        <td>Item</td>
+        <td>São oferecidos 3 itens 3 vezes, podendo escolher apenas um. Caso esteja sem espaço, você receberá uma <a style="color: white;" href="../pages/cards/raras.html">carta rara</a>, o Rato de Mochila</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/campfire.jpg"></td>
+        <td>Fogueira</td>
+        <td>Um breve descanso para uma de suas criaturas, podendo conceder +1 de dano ou +2 de vida a cada ativação. Tenha cautela!</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/trap.jpg"></td>
+        <td>Vendedor de peles</td>
+        <td>Aqui você pode adquirir peles de lebre, lobo e peles douradas, cada uma por um preço, dependendo de qual parte do jogo você se encontra
+        </td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/skin.jpg"></td>
+        <td>Compradora de peles</td>
+        <td>Aqui encontra-se uma comerciante em busca de peles, você pode trocar as suas por cartas, sendo normais, com selos extras, ou até mesmo raras</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/totem.jpg"></td>
+        <td>Totem</td>
+        <td>Escolha uma entre 3 partes de <a style="color: white;" href="../pages/totens.html">totem</a>, tendo um corpo (que representa um selo) e uma cabeça (que representa uma tribo), você atribui o selo à todas as cartas dessa tribo</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/duel.jpg"></td>
+        <td>Duelo</td>
+        <td>Confronto simples, sem enrolação. Abra uma vantagem de 5 pontos de dano para vencer</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/totem_duel.jpg"></td>
+        <td>Duelo com totem</td>
+        <td>Confronto no qual o oponente tem um <a style="color: white;" href="../pages/totens.html">totem</a> aleatório formado, e um baralho voltado ao mesmo. Abra uma vantagem de 5 pontos de dano para vencer</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/cave.jpg"></td>
+        <td>Caverna</td>
+        <td>Buscando desafios? Aqui você escolhe uma condição pré-suposta, e são reveladas 3 cartas do seu baralho, caso elas cumpram o requisito, sua recompensa será uma carta aleatória com selos extras. Caso contrário, nada acontece</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/sacrifice.jpg"></td>
+        <td>Sacrifício</td>
+        <td>Uma criatura que você deseja sacrificar transferirá todos seus selos para uma carta da sua escolha</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/demon.jpg"></td>
+        <td>Oferenda</td>
+        <td>Mate e remova permanentemente uma criatura de seu baralho. Em troca, começará sempre com alguns ossos que podem ser usados a qualquer momento</td>
+      </tr>
+      <tr>
+        <td><img class="casa" src="../media/casinhas/micologist.jpg"></td>
+        <td>Micologista</td>
+        <td>Cartas duplicadas? Chegou ao lugar certo. Os micologistas são capazes de fundir duas cartas iguas, somando todos seus atributos. Caso não haja cartas repetidas em seu baralho, você receberá mais uma que já está em sua posse, possibilitando a fundição num próximo encontro</td>
+      </tr>
+      
+
+    </table>
+    
+    
+</body>
+</html>

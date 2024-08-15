@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="stylesheet" href="../../static/css/template.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscryption</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><img style="width: 55px; height: 55px; cursor: pointer;" src="../../media/logo.png"
+        onclick="window.location.href='../../index.html'">
+      <a>Inscryption</a>
+    </div>
+
+    <h1></h1>
+    <button onclick="window.location.href='../../pages/cartas.html'">Cartas</button>
+    <button onclick="window.location.href='../../pages/itens.html'">Itens</button>
+    <button onclick="window.location.href='../../pages/tabuleiro.html'">Tabuleiro</button>
+    <button class="clicked" onclick="window.location.href='../chefes.html'">Chefes</button>
+  </header>
+  <div class="p-div">
+    <div class="space">
+      <h1>&nbsp</h1>
+      <figure>
+        <h1 class="fontpescador">PESCADOR</h1>
+        <img class="miniboss" src="../../media/chefes/pescas.png">
+        <figcaption>"Vai pescar."</figcaption>
+      </figure>
+      <h1>&nbsp</h1>
+    </div>
+
+    <div class="moldeboss">
+      <h1 class="fontpescadorsub">Luta contra o chefe:</h1>
+      <section><h2>Fase 1</h2></section>
+      <p>Em sua primeira fase, o Pescador joga seu Martim-Pescador na segunda casa. À partir do segundo turno, o Pescador fisga com seu anzol a última carta jogada, puxando-a para seu lado do tabuleiro, empurrando quaisquer cartas no caminho.</p>
+      <img id="instruction" src="../../media/fisgar1.jpg">
+      <img id="instruction" src="../../media/fisgar2.jpg">
+
+      <section><h2>Fase 2</h2></section>
+      <p>Na segunda fase, o Pescador limpa seu próprio tabuleiro, e joga um Balde de iscas em frente a cada carta presente no tabuleiro.</p>
+      <img id="instruction" src="../../media/baldes.jpg">
+    
+    <h1>&nbsp</h1>
+
+    <h1 class="fontpescadorsub">cartas pessoais</h1>
+    <h2>Balde de Iscas</h2>
+    <div class="cartaspessoais">
+      <img src="../../media/balde.png">
+      <p class="cartaspessoaisescrita">É posta em frente à todas as suas cartas presentes no tabuleiro. Quando atingida, um Tubarão surge em seu lugar.</p>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
