@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="stylesheet" href="../../static/css/template.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscryption</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo"><img style="width: 55px; height: 55px; cursor: pointer;" src="../../media/logo.png"
+        onclick="window.location.href='../../index.html'">
+      <a>Inscryption</a>
+    </div>
+
+    <h1></h1>
+    <button onclick="window.location.href='../../pages/cartas.html'">Cartas</button>
+    <button onclick="window.location.href='../../pages/itens.html'">Itens</button>
+    <button onclick="window.location.href='../../pages/tabuleiro.html'">Tabuleiro</button>
+    <button class="clicked" onclick="window.location.href='../chefes.html'">Chefes</button>
+  </header>
+  <div class="c-div">
+    <div class="space">
+      <h1>&nbsp</h1>
+      <figure>
+        <h1 class="fontcacador">Vendedor de Peles</h1>
+        <img class="miniboss" src="../../media/chefes/cacas.png">
+        <figcaption>"Tenho peles primorosas!"</figcaption>
+      </figure>
+      <h1>&nbsp</h1>
+    </div>
+
+    <div class="moldeboss">
+      <h1 class="fontcacadorsub">Luta contra o chefe:</h1>
+      <section><h2>Fase 1</h2></section>
+      <p>Em sua primeira fase, o Vendedor de Peles joga, respectivamente, 3 Sapos Bizarros e uma Armadilha Saltadora, sendo o segundo Sapo recuado.</p>
+      <img id="instruction" src="../../media/sapos.jpg">
+
+      <section><h2>Fase 2</h2><h2 id="red">SPOILER</h2></section>
+      <button onclick="surgir()" id="spoiler" class="botao">Clique para ver</button>
+
+
+      <script>
+        var isShowing = false;
+
+        function surgir() {
+            document.getElementById('conteudo').style.display = 'block';
+        }
+
+        function sumir() {
+            document.getElementById('conteudo').style.display = 'none';
+        }
+
+        function alternar() {
+            if (isShowing) {
+                sumir();
+            } else {
+                surgir();
+            }
+            isShowing = !isShowing;
+        }
+
+        document.getElementById('spoiler').onclick = alternar;
+    </script>
+
+
+      <div id="aparecer" style="display: none;">
+        <p style="color: white;">Na segunda fase, o Caçador revela ser também a Comerciante!<br>Todos os slots inimigos são ocupados por cartas com selos extras, funciona igual a loja da Comerciante,<br>uma pele por uma carta à sua escolha.</p>
+        <img id="gif" src="../../media/chefes/compradora.gif.gif">
+      </div>
+    
+    <h1>&nbsp</h1>
+
+    <h1 class="fontcacadorsub">cartas pessoais</h1>
+    <h2>Sapo Bizarro</h2>
+    <div class="cartaspessoais">
+      <img src="../../media/strange_frog.png">
+      <p class="cartaspessoaisescrita">Ao ser morto, o Sapo deixa uma Armadilha Saltadora em seu lugar.</p>
+    </div>
+    <h2>Armadilha Saltadora</h2>
+    <div class="cartaspessoais">
+      <img src="../../media/trap.jpg">
+      <p class="cartaspessoaisescrita">Quando atingida, mata instantaneamente a carta à sua frente.</p>
+    </div>
+  </div>
+
+  </div>
+<script src="../../static/css/script.js"></script>
+</body>
+
+</html>
